@@ -1,4 +1,4 @@
-package real; 
+package gms; 
 
   import javax.swing.JOptionPane; 
   public class Main { 
@@ -71,9 +71,9 @@ package real;
   				Lotto l = new Lotto();
   				JOptionPane.showMessageDialog(null,String.format("%s",l.randomNum())); 
 				break; 
-  			/*case "4": 
+  			case "4": 
   				MyCalender ca = new MyCalender();
-  				*/
+  				
   			} 
 	  		
   		} 
