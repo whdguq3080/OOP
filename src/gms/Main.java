@@ -65,15 +65,17 @@ package gms;
 				case "*":JOptionPane.showMessageDialog(null,String.format("%s입니다.",c.multi(arr2)));	break;
 				case "/":JOptionPane.showMessageDialog(null,String.format("%s입니다.",c.divid(arr2)));	break;
 				default:JOptionPane.showMessageDialog(null,String.format("%s입니다.",c.mod(arr2)));	break;
-				
 				}
   			case "3":
   				Lotto l = new Lotto();
   				JOptionPane.showMessageDialog(null,String.format("%s",l.randomNum())); 
 				break; 
   			case "4": 
-  				MyCalender ca = new MyCalender();
-  				
+  				String ca = JOptionPane.showInputDialog(null, 
+						"연도를 입력하십시오.");
+  				MyCalender ca1 = new MyCalender();
+				JOptionPane.showMessageDialog(null,String.format("%s",ca1.leapYear(ca))); 
+  				break;
   			} 
 	  		
   		} 
