@@ -9,23 +9,21 @@ public class Controller {
 		MemberService memberService = new MemberSeviceImpl();
 		while(true) {
 			switch (JOptionPane.showInputDialog("0.종료\n"
-					+ "1.회원가입\n")) {
+					+ "1.회원가입\n"
+					+ "2.회원목록")) {
 			case "0":JOptionPane.showMessageDialog(null, "시스템 종료");
 				return;
 			case "1":
-				/*//member = memberService.join(
+				memberService.join(
 				JOptionPane.showInputDialog("ID등록"), 
 				JOptionPane.showInputDialog("이름 등록"), 
 				JOptionPane.showInputDialog("주민번호 등록"), 
-				JOptionPane.showInputDialog("비번 등록")*/
-				
-				String id = JOptionPane.showInputDialog("아이디");
-				String pass = JOptionPane.showInputDialog("비밀번호");
-				String name = JOptionPane.showInputDialog("이름");
-				String ssn = JOptionPane.showInputDialog("주민번호");
-				member = memberService.join(id,name,pass,ssn); 
-				JOptionPane.showMessageDialog(null, member);
+				JOptionPane.showInputDialog("비번 등록"));
 				break;
+		/*	case "2":
+				MemberBean[] members = memberService.find();
+				JOptionPane.showMessageDialog(null,members);
+				break;*/
 /*			case"2":
 				account = new AccountBean();
 				String info1 = service.accountNum();

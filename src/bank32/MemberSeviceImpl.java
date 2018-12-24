@@ -2,15 +2,29 @@ package bank32;
 import javax.swing.JOptionPane;
 
 public class MemberSeviceImpl implements MemberService{
-	MemberBean member = new MemberBean();
-
+	private MemberBean[] members;
+	private int count;
+	
+	MemberSeviceImpl(){
+		members = new MemberBean[10];
+		count=0;
+	}
+	
+	
 	@Override
-	public MemberBean join(String id, String name, String pass, String ssn) {
+	public void join(String id, String name, String pass, String ssn) {
+		MemberBean member = new MemberBean();
 		member.setId(id);
 		member.setName(name);
 		member.setPass(pass);
 		member.setSsn(ssn);
-		return member;
+		members[count] = member;
+		count++;
+	}
+	@Override
+	public MemberBean[] list() {
+		// TODO Auto-generated method stub
+		return members;
 	}
 
 	@Override
@@ -30,6 +44,4 @@ public class MemberSeviceImpl implements MemberService{
 		// TODO Auto-generated method stub
 		
 	}
-
-	
 }
