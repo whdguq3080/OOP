@@ -1,4 +1,6 @@
-package bank33;
+package tutorial;
+
+import bank33.MemberBean;
 
 public interface MemberService {
 	// 회원가입
@@ -6,16 +8,16 @@ public interface MemberService {
 
 	// =================================
 	// 목록보기
-	public void list();
+	public MemberBean[] list();
 
 	// 개인정보 검색
-	public void find(String id);
+	public MemberBean find(String id);
 
 	// 로그인
-	public void login(String id, String pass);
+	public boolean login(String id, String pass);
 
 	// 회원수
-	public void count();
+	public int count();
 
 	// =================================
 	// 정보 수정
@@ -23,4 +25,7 @@ public interface MemberService {
 
 	// 회원탈퇴
 	public void delete(String id, String pass, String name, String ssn);
+
 }
+
+

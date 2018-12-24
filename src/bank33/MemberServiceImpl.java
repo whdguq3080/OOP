@@ -22,7 +22,6 @@ public class MemberServiceImpl implements MemberService{
 	}
 	@Override
 	public MemberBean[] list() {
-		// TODO Auto-generated method stub
 		return members;
 	}
 
