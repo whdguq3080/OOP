@@ -11,37 +11,33 @@ public class MemberServiceImpl implements MemberService{
 	}
 
 	@Override
-	public MemberBean[] list() {
+	public void list() {
 		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
-	public MemberBean find(String id) {
+	public void find() {
 		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
-	public boolean login(String id, String pass) {
+	public void login() {
 		// TODO Auto-generated method stub
-		return false;
 	}
 
 	@Override
-	public int count() {
+	public void count() {
 		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	@Override
-	public void update(String id, String pass, String newPass) {
+	public void update() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void delete(String id, String pass, String name, String ssn) {
+	public void delete() {
 		// TODO Auto-generated method stub
 		
 	}

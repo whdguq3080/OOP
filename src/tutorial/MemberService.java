@@ -8,23 +8,23 @@ public interface MemberService {
 
 	// =================================
 	// 목록보기
-	public MemberBean[] list();
+	public void list();
 
 	// 개인정보 검색
-	public MemberBean find(String id);
+	public void find();
 
 	// 로그인
-	public boolean login(String id, String pass);
+	public void login();
 
 	// 회원수
-	public int count();
+	public void count();
 
 	// =================================
 	// 정보 수정
-	public void update(String id, String pass, String newPass);
+	public void update();
 
 	// 회원탈퇴
-	public void delete(String id, String pass, String name, String ssn);
+	public void delete();
 
 }
 
